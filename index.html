@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <h1 class="bg-primary text-white  mb-4 p-4">CRUD Using Web Storage</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form id="submitForm">
+            <div class="form-group">
+              <label for="fname">First Name*</label>
+              <input type="text" id="fname" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name*</label>
+              <input type="text" id="lname" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="text" id="email" class="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$" required />
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact*</label>
+              <input type="text" id="contact" class="form-control" pattern = "[0-9]{1,10}$" required />
+            </div>
+            <button type="submit" id="submitBtn" value="submit" class="btn btn-primary mt-4 float-right">Submit</button>
+            <button type="button" id="updateBtn" value="button" class="btn btn-primary mt-4 float-right d-none">Update</button>
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sr.No.</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="tableContent">
+                <!-- <tr>
+                  <td>1</td>
+                  <td>Shrikant</td>
+                  <td>Bhadke</td>
+                  <td>shri.sb11@gmail.com</td>
+                  <td>124535565656</td>
+                  <td><button class="btn btn-primary">Edit</button></td>
+                  <td><button class="btn btn-danger">Delete</button></td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
+
+
+
+
