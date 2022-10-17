@@ -105,7 +105,7 @@ function tamplating(newarray) {
 }
 
 if (localStorage.getItem("stdArray")) {
-  let stdArray = JSON.parse(localStorage.getItem("stdArray"))
+   stdArray = JSON.parse(localStorage.getItem("stdArray"))
   tamplating(stdArray);
 }
 
